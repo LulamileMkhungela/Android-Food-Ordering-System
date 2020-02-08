@@ -232,7 +232,7 @@ public class finalize_order extends Activity {
 
     final Object o = this;
     AlertDialog.Builder builder = new AlertDialog.Builder(this);
-    builder.setMessage("Are you sure you want to confirm this order?")
+    builder.setMessage("Are you sure! Confirm this order?")
             .setCancelable(false)
             .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) {
