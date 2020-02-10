@@ -586,9 +586,10 @@
                     android:textStyle="bold" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="106dp"
+                    android:layout_height="44dp"
                     android:layout_alignParentRight="true"
+                    android:layout_marginRight="13dp"
                     android:orientation="horizontal">
 
                     <Button
@@ -645,7 +646,6 @@
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_below="@+id/starters_tot_id"
-        android:layout_centerHorizontal="true"
         android:background="#ffbc7a"
         android:onClick="main_menu"
         android:text="Main Menu" />
@@ -655,8 +655,7 @@
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_below="@+id/scrollView"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="26dp"
+        android:layout_centerHorizontal="true"
         android:background="#ffbc7a"
         android:onClick="fin_ord"
         android:text="Proceed" />
