@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desert"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.lulamile.comspace.orderapp.Veg"
-    android:background="@drawable/veg_vvvthali"
-    >
+    tools:context="com.lulamile.comspace.orderapp.Veg">
+
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:text="Veg Items"
         android:textColor="#000000"
-        android:id="@+id/textView2"
-        android:textSize="22sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:textSize="22sp" />
 
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="wrap_content"
         android:layout_height="430dp"
-        android:padding="15dp"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentEnd="true">
+        android:layout_alignParentEnd="true"
+        android:padding="15dp">
 
 
         <LinearLayout
@@ -41,15 +43,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Roti (R20)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -102,15 +103,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Butter Roti(R25)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
 
                 <LinearLayout
@@ -164,15 +164,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Paneer Tikka(R180)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -223,15 +222,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Veg Pulao(R200)"
                     android:textColor="#000000"
                     android:textSize="15sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -282,15 +280,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Mutter Paneer(R200)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -340,15 +337,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Veg Noodles(R100)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -400,15 +396,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Veg fried Rice(R120)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -460,15 +455,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Veg Burger (R40)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
 
@@ -520,15 +514,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Veg Biryani(R150)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
 
@@ -572,7 +565,6 @@
             </RelativeLayout>
 
 
-
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -581,15 +573,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
                     android:padding="10dp"
                     android:text="Paneer Kota(R150)"
                     android:textColor="#000000"
                     android:textSize="14sp"
-                    android:textStyle="bold"
-                    />
+                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -634,34 +625,36 @@
 
         </LinearLayout>
     </ScrollView>
+
     <TextView
-        android:textSize="20sp"
+        android:id="@+id/veg_total_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/veg_total_id"
-        android:textColor="@android:color/black"
-        android:padding="10dp"
         android:layout_below="@+id/scrollView"
         android:layout_alignEnd="@+id/scrollView"
-        android:layout_marginEnd="31dp" />
+        android:layout_marginEnd="31dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
     <Button
         android:layout_width="80dp"
         android:layout_height="40dp"
-        android:text="Main Menu"
+        android:layout_below="@+id/button9"
+        android:layout_centerHorizontal="true"
         android:background="#ffbc7a"
         android:onClick="main_menu"
-        android:layout_below="@+id/button9"
-        android:layout_centerHorizontal="true" />
+        android:text="Main Menu" />
 
     <Button
+        android:id="@+id/button9"
         android:layout_width="70dp"
         android:layout_height="40dp"
-        android:text="Proceed"
+        android:layout_alignBottom="@+id/veg_total_id"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="28dp"
         android:background="#ffbc7a"
         android:onClick="fin_ord"
-        android:id="@+id/button9"
-        android:layout_marginStart="28dp"
-        android:layout_alignBottom="@+id/veg_total_id"
-        android:layout_alignParentEnd="true" />
+        android:text="Proceed" />
 </RelativeLayout>
