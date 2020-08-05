@@ -36,7 +36,7 @@
         </activity>
         <activity android:name="com.lulamile.comspace.orderapp.Veg" >
         </activity>
-        <activity android:name="com.lulamile.comspace.orderapp.N_Veg" >
+        <activity android:name="com.lulamile.comspace.orderapp.NatedVeg" >
         </activity>
         <activity android:name="com.lulamile.comspace.orderapp.Dessert" >
         </activity>
@@ -46,7 +46,7 @@
             android:label="@string/title_activity_finalize_order" >
         </activity>
         <activity
-            android:name="com.lulamile.comspace.orderapp.thankyou"
+            android:name="com.lulamile.comspace.orderapp.ThankYou"
             android:label="@string/title_activity_thankyou" >
         </activity>
     </application>

@@ -224,11 +224,11 @@ public class Veg extends Activity {
 
     public void total_cal(){
         total_veg=roti*(20)+butter_roti*(25)+paneer_tikka*(180)+veg_pulao*(200)+mutter_paneer*(200)+veg_noodles*(100)+veg_fried_rice*(120)+veg_burger*(40)+veg_biryani*(150)+paneer_kofta*(150);
-        finalize_order.all_total=Starters.starters_total+Veg.total_veg+N_Veg.n_veg_total+Dessert.dessert_total;
+        finalize_order.all_total=Starters.starters_total+Veg.total_veg+ NatedVeg.n_veg_total+Dessert.dessert_total;
 
         if (finalize_order.all_total > 0) {
         TextView tv = (TextView) findViewById(R.id.veg_total_id);
-        tv.setText(""+"₹"+ (finalize_order.all_total));
+        tv.setText(""+"R"+ (finalize_order.all_total));
     }
     else{
             TextView tv = (TextView) findViewById(R.id.veg_total_id);
@@ -322,7 +322,7 @@ public class Veg extends Activity {
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
 
-                                Intent nextact = new Intent((Veg) o, thankyou.class);
+                                Intent nextact = new Intent((Veg) o, ThankYou.class);
                                 startActivity(nextact);
                             }
                         })

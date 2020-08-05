@@ -214,7 +214,7 @@ public class Starters extends Activity {
     public void total_cal()
     {
         starters_total=veg_crispy*(150)+chicken_crispy*(170)+paneer_chilly*(120)+masala_papad*(30)+veg_soup*(80)+chicken_soup*(80)+tomato_soup*(100)+cheese_pakoda*(130)+paneer_pakoda*(140)+chicken_chilly*(120);
-        finalize_order.all_total=Starters.starters_total+Veg.total_veg+N_Veg.n_veg_total+Dessert.dessert_total;
+        finalize_order.all_total=Starters.starters_total+Veg.total_veg+ NatedVeg.n_veg_total+Dessert.dessert_total;
 
         if (finalize_order.all_total > 0) {
         TextView tv = (TextView) findViewById(R.id.starters_tot_id);
@@ -324,7 +324,7 @@ public class Starters extends Activity {
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
 
-                                Intent nextact = new Intent((Starters) o, thankyou.class);
+                                Intent nextact = new Intent((Starters) o, ThankYou.class);
                                 startActivity(nextact);
                             }
                         })

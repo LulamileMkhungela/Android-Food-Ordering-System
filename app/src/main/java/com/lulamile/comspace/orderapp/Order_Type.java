@@ -21,10 +21,10 @@ public class Order_Type extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order__type);
-        finalize_order.all_total=Starters.starters_total+Veg.total_veg+N_Veg.n_veg_total+Dessert.dessert_total;
+        finalize_order.all_total=Starters.starters_total+Veg.total_veg+ NatedVeg.n_veg_total+Dessert.dessert_total;
         TextView tv = (TextView) findViewById(R.id.total_on_mm);
         if(finalize_order.all_total >0){
-        tv.setText(""+"₹" + finalize_order.all_total);}
+        tv.setText(""+"R" + finalize_order.all_total);}
     }
     public void starter(View view)
     {
@@ -40,7 +40,7 @@ public class Order_Type extends Activity {
     }
     public void nveg(View view)
     {
-        Intent nextact=new Intent(this,N_Veg.class);
+        Intent nextact=new Intent(this, NatedVeg.class);
         startActivity(nextact);
         overridePendingTransition(R.anim.anim_in, R.anim.anim_out);
     }
@@ -68,7 +68,7 @@ public class Order_Type extends Activity {
                         .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int id) {
 
-                                Intent nextact = new Intent((Order_Type) o, thankyou.class);
+                                Intent nextact = new Intent((Order_Type) o, ThankYou.class);
                                 startActivity(nextact);
                             }
                         })

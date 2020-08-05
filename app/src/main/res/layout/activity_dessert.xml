@@ -28,7 +28,8 @@
         android:layout_height="430dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView3"
-        android:padding="15dp">
+        android:padding="15dp"
+        android:layout_alignParentLeft="true">
 
 
         <LinearLayout
@@ -80,7 +81,8 @@
                         android:text="__"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="25sp" />
+                        android:textSize="25sp"
+                        android:gravity="center_horizontal" />
 
                     <Button
                         android:layout_width="40dp"
@@ -201,7 +203,8 @@
                         android:text="__"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="25sp" />
+                        android:textSize="25sp"
+                        android:gravity="center_horizontal" />
 
                     <Button
                         android:layout_width="40dp"
@@ -259,7 +262,8 @@
                         android:text="__"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="25sp" />
+                        android:textSize="25sp"
+                        android:gravity="center_horizontal" />
 
                     <Button
                         android:layout_width="40dp"
@@ -554,7 +558,8 @@
                         android:text="__"
                         android:textAlignment="center"
                         android:textColor="@android:color/black"
-                        android:textSize="25sp" />
+                        android:textSize="25sp"
+                        android:gravity="center_horizontal" />
 
                     <Button
                         android:layout_width="40dp"
@@ -642,7 +647,10 @@
         android:text=""
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:layout_marginRight="49dp"
+        android:layout_alignRight="@+id/scrollView" />
 
     <Button
         android:id="@+id/button"

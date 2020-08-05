@@ -10,21 +10,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 /**
- * This is a simple Android mobile client
- * This application read any string massage typed on the text field and
- * send it to the server when the Send button is pressed
- * Author by Lak J Comspace
+ * Created by Lulamile
  */
 public class SlimpleTextClientActivity extends Activity {
 
 
-    /*
-    private Socket client;
-    private PrintWriter printwriter;
-    private EditText textField;
-    private Button button;
-    private String messsage;
-    */
+
     static int tablex;
 
     @Override

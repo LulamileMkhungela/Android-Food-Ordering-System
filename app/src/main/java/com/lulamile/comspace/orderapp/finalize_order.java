@@ -8,13 +8,14 @@ import android.app.Activity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
+
+
 public class finalize_order extends Activity {
     finalize_order a=this;
     public static  Socket client;
@@ -81,37 +82,37 @@ public class finalize_order extends Activity {
         if (Dessert.dutch_almond > 0) {
             fin_order_string = fin_order_string + "dutch almond-" + Dessert.dutch_almond + ",";
         }
-        if (N_Veg.chicken_burger > 0) {
-            fin_order_string = fin_order_string + "chicken burger-" + N_Veg.chicken_burger + ",";
+        if (NatedVeg.chicken_burger > 0) {
+            fin_order_string = fin_order_string + "chicken burger-" + NatedVeg.chicken_burger + ",";
         }
-        if (N_Veg.chicken_bbq_pizza > 0) {
-            fin_order_string = fin_order_string + "chicken bbq pizza-" + N_Veg.chicken_bbq_pizza + ",";
+        if (NatedVeg.chicken_bbq_pizza > 0) {
+            fin_order_string = fin_order_string + "chicken bbq pizza-" + NatedVeg.chicken_bbq_pizza + ",";
         }
-        if (N_Veg.chicken_tikka > 0) {
-            fin_order_string = fin_order_string + "chicken tikka-" + N_Veg.chicken_tikka + ",";
+        if (NatedVeg.chicken_tikka > 0) {
+            fin_order_string = fin_order_string + "chicken tikka-" + NatedVeg.chicken_tikka + ",";
         }
-        if (N_Veg.fried_fish_rice > 0) {
-            fin_order_string = fin_order_string + "fried fish rice-" + N_Veg.fried_fish_rice + ",";
+        if (NatedVeg.fried_fish_rice > 0) {
+            fin_order_string = fin_order_string + "fried fish rice-" + NatedVeg.fried_fish_rice + ",";
         }
-        if (N_Veg.kolhapuri_chicken > 0) {
-            fin_order_string = fin_order_string + "kolhapur chicken-" + N_Veg.kolhapuri_chicken + ",";
+        if (NatedVeg.kolhapuri_chicken > 0) {
+            fin_order_string = fin_order_string + "karapou chicken-" + NatedVeg.kolhapuri_chicken + ",";
         }
-        if (N_Veg.chicken_noodles > 0) {
-            fin_order_string = fin_order_string + "chicken noodles-" + N_Veg.chicken_noodles + ",";
+        if (NatedVeg.chicken_noodles > 0) {
+            fin_order_string = fin_order_string + "chicken noodles-" + NatedVeg.chicken_noodles + ",";
         }
-        if (N_Veg.chicken_fried_rice > 0) {
-            fin_order_string = fin_order_string + "chicken fried rice-" + N_Veg.chicken_fried_rice + ",";
-        }
-
-        if (N_Veg.chicken_lollipop > 0) {
-            fin_order_string = fin_order_string + "chicken lollipop-" + N_Veg.chicken_lollipop + ",";
+        if (NatedVeg.chicken_fried_rice > 0) {
+            fin_order_string = fin_order_string + "chicken fried rice-" + NatedVeg.chicken_fried_rice + ",";
         }
 
-        if (N_Veg.chicken_biryani> 0) {
-            fin_order_string = fin_order_string + "chicken biryani-" + N_Veg.chicken_biryani + ",";
+        if (NatedVeg.chicken_lollipop > 0) {
+            fin_order_string = fin_order_string + "chicken lollipop-" + NatedVeg.chicken_lollipop + ",";
         }
-        if (N_Veg.mutton_biryani> 0) {
-            fin_order_string = fin_order_string + "mutton biryani-" + N_Veg.mutton_biryani + ",";
+
+        if (NatedVeg.chicken_biryani> 0) {
+            fin_order_string = fin_order_string + "chicken biryani-" + NatedVeg.chicken_biryani + ",";
+        }
+        if (NatedVeg.mutton_biryani> 0) {
+            fin_order_string = fin_order_string + "mutton biryani-" + NatedVeg.mutton_biryani + ",";
         }
 
         if (Veg.roti > 0) {
@@ -241,7 +242,7 @@ public class finalize_order extends Activity {
                    // messsage = "Order:" + SlimpleTextClientActivity.tablex + "|" + fin_order_string + "|" + Integer.toString(all_total);
                         SendMessage sendMessageTask = new SendMessage();
                         sendMessageTask.execute();
-                        Intent nextact = new Intent((finalize_order) o, thankyou.class);
+                        Intent nextact = new Intent((finalize_order) o, ThankYou.class);
                         startActivity(nextact);
                 }
             })
